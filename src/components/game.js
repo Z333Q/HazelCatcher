@@ -1,0 +1,158 @@
+import { StyleSheet, Dimensions } from 'react-native';
+
+const winWidth = Dimensions.get('window').width;
+const winHeight = Dimensions.get('window').height;
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#f0f0f0',
+        width: winWidth * 0.8,
+        margin: 10,
+        padding: 20,
+        // Added from CSS
+        width: '80%',
+        padding: '0 2rem',
+    },
+    main: {
+        minHeight: winHeight,
+        padding: 40,
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        // Added from CSS
+        minHeight: '100vh',
+        padding: '4rem 0',
+        flexDirection: 'column',
+    },
+    squirrel: {
+        position: 'absolute',
+        bottom: 0.02 * winHeight,
+        fontSize: 0.05 * winWidth,
+        left: winWidth / 2 - 0.05 * winWidth,
+    },
+    element: {
+        position: 'absolute',
+        fontSize: 0.04 * winWidth,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+    },
+    score: {
+        position: 'absolute',
+        top: 10,
+        left: 10,
+        fontSize: 0.04 * winWidth,
+        color: '#333',
+        backgroundColor: 'rgba(255, 255, 255, 0.7)',
+        padding: 5,
+        borderRadius: 5,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+    },
+    startBtn: {
+        position: 'absolute',
+        bottom: 0.03 * winHeight,
+        padding: 10,
+        backgroundColor: '#4caf50',
+        borderRadius: 5,
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingHorizontal: 0.03 * winWidth,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+    },
+    startBtnActive: {
+        backgroundColor: '#388e3c',
+    },
+    gameOverText: {
+        fontSize: 0.06 * winWidth,
+        color: '#f00',
+        fontWeight: 'bold',
+        backgroundColor: 'rgba(255, 255, 255, 0.7)',
+        padding: 10,
+        borderRadius: 5,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+    },
+    title: {
+        lineHeight: 1.15,
+        fontSize: '3rem',
+        textAlign: 'center',
+        margin: 50,
+    },
+    title_a: {  // used _ instead of space
+        color: '#0070f3',
+        textDecoration: 'none',
+    },
+    grid: {
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+    },
+    card: {
+        margin: '0.5rem',
+        padding: '0.7rem',
+        textAlign: 'center',
+        color: '#0070f3',
+        backgroundColor: '#fafafa',
+        textDecoration: 'none',
+        border: '1px solid #0070f3',
+        borderRadius: 10,
+        transition: 'color 0.15s ease, border-color 0.15s ease',
+        width: '100%',
+    },
+    card_hover: {  // used _ instead of :
+        cursor: 'pointer',
+        backgroundColor: '#f1f1f1',
+    },
+    footer: {
+        display: 'flex',
+        flex: 1,
+        padding: '2rem 0',
+        borderTop: '1px solid #eaeaea',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: '10rem',
+    },
+    footer_a: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexGrow: 1,
+    },
+    logo: {
+        height: '1.5rem',
+        marginLeft: '0.5rem',
+    },
+    flex_container: {
+        display: 'flex',
+        flexFlow: 'row wrap',
+    },
+    flex_container_div: {
+        width: 100,
+        margin: 10,
+        textAlign: 'center',
+        lineHeight: 75,
+        fontSize: 30,
+    },
+    console: {
+        width: '100%',
+        height: '100%',
+        overflow: 'auto',
+        wordWrap: 'break-word',
+        fontSize: 16,
+        fontFamily: 'monospace',
+    },
+});
+
+export default styles;

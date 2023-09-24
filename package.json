@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "@babel/core": "^7.22.20",
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-flow": "^7.22.15",
+    "@babel/preset-react": "^7.22.15",
+    "@toruslabs/react-native-web-browser": "^1.1.0",
+    "@web3auth/base": "^7.0.1",
+    "@web3auth/modal": "^7.0.2",
+    "@web3auth/openlogin-adapter": "^7.0.1",
+    "@web3auth/react-native-sdk": "^5.0.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "empty-module": "^0.0.2",
+    "process": "^0.11.10",
+    "react-dom": "^18.2.0",
+    "react-native-encrypted-storage": "^4.0.3",
+    "react-native-get-random-values": "^1.9.0",
+    "react-native-web": "^0.19.9",
+    "react-scripts": "^5.0.1",
+    "readable-stream": "^4.4.2",
+    "web3": "^4.1.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
